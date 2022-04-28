@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+header {
+    position: relative;
+    box-shadow: 0px 5px 4px 0px rgb(63 63 63 / 27%);
+    width: 100%;
+    background-color: #fff;
+}
+aside {
+    min-height: 100vh;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #C2185B;
+}
+
+.btn-primary{
+    background-color: #C2185B;
+    border-color: #C2185B;
+}
+
+main.login {
+    width: 400px;
+}
+
+section.full{
+    width: 100%;
+    min-height: 80vh;
+    padding: 50px 0;
+}
+
+article.evento {
+    width: 350px;
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li  {
+    padding: 10px;
+}
+
+.row aside a svg {
+    display: none;
+}
+
+@media screen and (min-width: 946px) and (max-width: 1150px) {
+    .row aside img {
+        width: 80px !important;
+        height: auto !important;
+    }
+}
+@media screen and (max-width: 945px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .row aside {
+        width: 100vw;
+        margin-bottom: -320px;
+    }
+    .row aside img {
+        width: 80px;
+        height: auto;
+    }
+    .row aside a {
+        margin: 0 auto;
+    }
+    .row aside a svg {
+        display: none;
+    }
+    .row aside ul {
+        margin-bottom: 0 !important;
+        text-align: center;
+    }
+    main {
+        width: 100vw !important;
+    }
+    /* .p-5 {
+        padding: 1.8rem 1.2rem!important;
+    } */
+}

@@ -1,0 +1,101 @@
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.modal-window {
+    position: relative;
+    width: 340px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.modal-window p {
+    font-size: 19px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.modal-window input {
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.548);
+    border-radius: .25rem;
+    outline: 0;
+}
+.modal-window label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.modal-window label input {
+    width: 80px;
+}
+.modal-window span {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    right: 10px;
+    color: rgb(173, 9, 9);
+    font-weight: 800;
+}
+.modal-window span:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    #divEventos.d-flex {
+    flex-direction: column !important;
+    }
+    .col > img {
+        width: 100% !important;
+    }
+    footer nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    main > section:nth-child(3) > div > div > div:nth-child(1) {
+        text-align: center;
+    }
+    main > section.full.d-flex.justify-content-center.align-items-center > div > div > div:nth-child(1) {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    article.evento {
+        width: 100%;
+    }
+    footer {
+        padding: 20px 0;
+    }
+    footer > div {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    footer > div nav ul {
+        padding: 0 !important;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 301px) {
+    header img {
+        width: 100%;
+    }
+}
