@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sound Garden - Eventos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/landing-page.css">
 
@@ -19,13 +18,17 @@
 </head>
 
 <body>
-    <div class="models">
-        <article class="evento card p-5 m-3">
-            <h2>nome - --/--/--</h2>
-            <h4>Attractions</h4>
-            <p>Description</p>
-            <a href="" class="btn btn-primary">reservar ingresso</a>
-        </article>
+    <div id="models">
+        <div class="models align-items-stretch">
+            <article class="evento card p-5 m-3 justify-content-sm-between">
+                <div>
+                    <h2>nome - --/--/--</h2>
+                    <h4>Attractions</h4>
+                    <p>Description</p>
+                </div>
+                <a href="" class="btn btn-primary">reservar ingresso</a>
+            </article>
+    </div>
     </div>
     <header class=" d-flex justify-content-center align-items-center">
         <a href="index.html">
@@ -37,8 +40,8 @@
             <div class="container text-center">
                 <h2>Todos os Eventos</h2>
             </div>
-            <div id="boxEventos" class="container d-flex justify-content-center align-items-center flex-wrap">
-                <!-- eventos via javascript -->
+            <div id="boxEventos" class="container d-flex justify-content-center align-items-stretch flex-wrap">
+                <!-- os eventos sao colocados aqui via javascript -->
             </div>
             <!-- modal reservar -->
             <div class="modal">
@@ -55,15 +58,12 @@
                 </div>
             </div>
         </section>
-        <section class="full d-flex justify-content-center align-items-center"
-            style="background-color: #f2f2f2; color: #555">
+        <section class="full d-flex justify-content-center align-items-center" style="background-color: #f2f2f2; color: #555">
             <div class="container">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col">
                         <h2>A Sound Garden</h2>
-
                         <p>Sound Garden é uma casa de show super descolada</p>
-
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id autem, fugiat recusandae, totam
                             inventore harum iste libero obcaecati neque fugit ipsam. Dolorum quae quis odio rem at eum
                             cumque excepturi.</p>
@@ -84,7 +84,6 @@
                 </div>
             </div>
         </section>
-
     </main>
     <footer>
         <div class="container d-flex justify-content-center align-items-center">
@@ -103,8 +102,6 @@
             </nav>
         </div>
     </footer>
-
     <script src="js/eventos.js"></script>
 </body>
-
 </html>
